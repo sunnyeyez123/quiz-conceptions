@@ -119,8 +119,9 @@ public class MainActivity extends AppCompatActivity {
                 theTruth = getString(R.string.washington_fact);
                 break;
             case 4:
-                theQuestion = "April";
+                theQuestion = getString(R.string.camel_statement);
                 realAnswer = true;
+                theTruth = getString(R.string.camel_fact);
                 break;
             case 5:
                 theQuestion = "May";

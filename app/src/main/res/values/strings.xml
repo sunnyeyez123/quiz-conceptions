@@ -24,8 +24,13 @@
     <string name="washington_fact">His dentures were made of gold, hippopotamus ivory, lead, animal teeth (including horse and donkey teeth),[133] and probably human teeth purchased from slaves</string>
 
     <string name="chicken_statement">There was a chicken that lived for 18 months with its head cut off.</string>
-    
+
     <string name="chicken_fact">After a farmer failed to properly behead a chicken because he missed the jugular vein, the bird lived for 18 months. Christened Mike the Headless Chicken, it survived on a mixture of milk and water, fed into his exposed esophagus via an eyedropper. The farmer turned Mike into a sideshow attraction, charging 25 cents admission. </string>
+
+    <string name="camel_statement">Camels have three eyelids.</string>
+
+    <string name="camel_fact">Two of the eyelids have lashes and the third eyelid comes from the corner of the eye. The eyes are protected by a double row of long curly eyelashes which help keep out the sand and dust. Thick bushy eyebrows shield the eyes from the desert sun..</string>
+
 
 
 </resources>
