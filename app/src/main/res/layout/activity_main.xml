@@ -18,36 +18,28 @@
             style="@style/Headers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/instructions"
-            />
+            android:text="@string/instructions" />
 
 
         <TextView
             style="@style/Bodies"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:text="@string/instruction_text"
-           />
+            android:text="@string/instruction_text" />
 
 
         <TextView
             style="@style/Headers"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/statement_header"
-            />
+            android:text="@string/statement_header" />
 
 
         <TextView
-            style="@style/Bodies"
-
             android:id="@+id/question_text_view"
+            style="@style/Bodies"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,44 +48,40 @@
 
 
             <Button
-                style="@style/myButton"
                 android:id="@+id/true-button"
+                style="@style/myButton"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_marginRight="44dp"
                 android:layout_height="wrap_content"
-                android:text="True"
-
-
-                android:onClick="chooseTrue"/>
+                android:layout_marginRight="44dp"
+                android:layout_weight="1"
+                android:onClick="chooseTrue"
+                android:text="True" />
 
             <Button
-                style="@style/myButton"
-
                 android:id="@+id/false-button"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="False"
 
-                android:onClick="chooseFalse"/>
+                style="@style/myButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="chooseFalse"
+
+                android:text="False" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-           >
+            android:orientation="vertical">
 
             <TextView
-                style="@style/Headers"
                 android:id="@+id/answer_header"
+                style="@style/Headers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:text="Answer"
-                />
+                android:text="Answer" />
 
             <TextView
                 android:id="@+id/result_text_view"
@@ -105,9 +93,8 @@
                 />
 
             <TextView
-                style="@style/Bodies"
-
                 android:id="@+id/answer_text_view"
+                style="@style/Bodies"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/result_text_view"
@@ -118,17 +105,12 @@
 
             <Button
                 style="@style/myButton"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:text="Next"
                 android:onClick="nextQuestion"
-               />
+                android:text="Next" />
         </LinearLayout>
-
-
-
 
 
     </LinearLayout>

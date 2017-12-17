@@ -31,7 +31,7 @@
 
     <style name="myButton" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="background"> @color/colorAccent</item>
+        <item name="android:background"> #448AFF</item>
 
     </style>
 
