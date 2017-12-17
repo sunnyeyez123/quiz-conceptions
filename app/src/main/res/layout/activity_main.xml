@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context="com.jasminelawrence.quizconceptions.MainActivity">
 
     <LinearLayout
@@ -14,60 +15,66 @@
 
 
         <TextView
+            style="@style/Headers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/instructions"
-            android:textAllCaps="true"
-            android:layout_margin="8dp"
             />
 
 
         <TextView
+            style="@style/Bodies"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
 
             android:text="@string/instruction_text"
            />
 
 
         <TextView
+            style="@style/Headers"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/statement_header"
-            android:layout_margin="8dp"
-            android:textAllCaps="true"
             />
 
 
         <TextView
+            style="@style/Bodies"
+
             android:id="@+id/question_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
 
             <Button
+                style="@style/myButton"
                 android:id="@+id/true-button"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="44dp"
                 android:layout_height="wrap_content"
                 android:text="True"
-                android:layout_margin="8dp"
+
 
                 android:onClick="chooseTrue"/>
 
             <Button
+                style="@style/myButton"
+
                 android:id="@+id/false-button"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="False"
-                android:layout_margin="8dp"
 
                 android:onClick="chooseFalse"/>
 
@@ -76,30 +83,30 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:orientation="vertical"
            >
 
             <TextView
+                style="@style/Headers"
                 android:id="@+id/answer_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:text="Answer"
-                android:textAllCaps="true"
                 />
 
             <TextView
                 android:id="@+id/result_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TBD"
                 android:layout_below="@+id/answer_header"
                 android:visibility="invisible"
 
                 />
 
             <TextView
+                style="@style/Bodies"
+
                 android:id="@+id/answer_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -110,6 +117,8 @@
 
 
             <Button
+                style="@style/myButton"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
