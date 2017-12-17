@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">QuizConceptions</string>
 
-    <string name="question">The first question.</string>
+    <string name="statement_header">Statement</string>
+    <string name="instructions">Instructions</string>
+
+
+
+    <string name="instruction_text"> Review the following statement. Decide whether you believe it\'s true or false then select the corresponding button. \n\nSelect next to skip to the next statement.</string>
+
+
 
 </resources>
