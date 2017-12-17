@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         answer.setVisibility(View.INVISIBLE);
         result.setVisibility(View.INVISIBLE);
 
-        if (questionNumber <= 9) {
+        if (questionNumber < 4) {
             questionNumber += 1;
 
         } else {
@@ -123,28 +123,29 @@ public class MainActivity extends AppCompatActivity {
                 realAnswer = true;
                 theTruth = getString(R.string.camel_fact);
                 break;
-            case 5:
-                theQuestion = "May";
-                realAnswer = true;
-                break;
-            case 6:
-                theQuestion = "June";
-                realAnswer = false;
-                break;
-            case 7:
-                theQuestion = "July";
-                realAnswer = true;
-                break;
-            case 8:
-                theQuestion = "August";
-                realAnswer = true;
-                break;
-            case 9:
-                theQuestion = "September";
-                realAnswer = false;
-                break;
+//            case 5:
+//                theQuestion = "May";
+//                realAnswer = true;
+//                break;
+//            case 6:
+//                theQuestion = "June";
+//                realAnswer = false;
+//                break;
+//            case 7:
+//                theQuestion = "July";
+//                realAnswer = true;
+//                break;
+//            case 8:
+//                theQuestion = "August";
+//                realAnswer = true;
+//                break;
+//            case 9:
+//                theQuestion = "September";
+//                realAnswer = false;
+//                break;
             default:
                 theQuestion = "Invalid question";
+                theTruth = "Invalid fact";
                 break;
         }
 
