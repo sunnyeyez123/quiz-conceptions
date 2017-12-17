@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     String theTruth;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +28,15 @@ public class MainActivity extends AppCompatActivity {
     public void chooseTrue(View view) {
 
         choice = true;
+
         TextView answer = (TextView) findViewById(R.id.answer_text_view);
         TextView result = (TextView) findViewById(R.id.result_text_view);
+
+        TextView trueButton = (TextView) findViewById(R.id.true_button);
+        TextView falseButton = (TextView) findViewById(R.id.false_button);
+
+        trueButton.setEnabled(false);
+        falseButton.setEnabled(false);
 
         result.setText(isCorrect(choice));
         answer.setVisibility(View.VISIBLE);
@@ -38,9 +47,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void chooseFalse(View view) {
 
-        choice = false;
         TextView answer = (TextView) findViewById(R.id.answer_text_view);
         TextView result = (TextView) findViewById(R.id.result_text_view);
+        TextView trueButton = (TextView) findViewById(R.id.true_button);
+        TextView falseButton = (TextView) findViewById(R.id.false_button);
+
+        choice = false;
+        trueButton.setEnabled(false);
+        falseButton.setEnabled(false);
 
         result.setText(isCorrect(choice));
         answer.setVisibility(View.VISIBLE);
@@ -53,6 +67,12 @@ public class MainActivity extends AppCompatActivity {
         TextView answer = (TextView) findViewById(R.id.answer_text_view);
         TextView result = (TextView) findViewById(R.id.result_text_view);
         TextView question = (TextView) findViewById(R.id.question_text_view);
+
+        TextView trueButton = (TextView) findViewById(R.id.true_button);
+        TextView falseButton = (TextView) findViewById(R.id.false_button);
+
+        trueButton.setEnabled(true);
+        falseButton.setEnabled(true);
 
         answer.setVisibility(View.INVISIBLE);
         result.setVisibility(View.INVISIBLE);
