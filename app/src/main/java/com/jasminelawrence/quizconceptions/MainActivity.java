@@ -8,13 +8,10 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
 
-    private boolean choice;
-    private boolean realAnswer = false;
     int questionNumber = 0;
     String theTruth;
-
-
-
+    private boolean choice;
+    private boolean realAnswer = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,42 +22,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     public void chooseTrue(View view) {
 
         choice = true;
-
-        TextView answer = (TextView) findViewById(R.id.answer_text_view);
-        TextView result = (TextView) findViewById(R.id.result_text_view);
-
-        TextView trueButton = (TextView) findViewById(R.id.true_button);
-        TextView falseButton = (TextView) findViewById(R.id.false_button);
-
-        trueButton.setEnabled(false);
-        falseButton.setEnabled(false);
-
-        result.setText(isCorrect(choice));
-        answer.setVisibility(View.VISIBLE);
-        result.setVisibility(View.VISIBLE);
+        choiceActions();
 
 
     }
 
     public void chooseFalse(View view) {
 
+        choice = false;
+        choiceActions();
+
+    }
+
+    private void choiceActions() {
         TextView answer = (TextView) findViewById(R.id.answer_text_view);
         TextView result = (TextView) findViewById(R.id.result_text_view);
+
         TextView trueButton = (TextView) findViewById(R.id.true_button);
         TextView falseButton = (TextView) findViewById(R.id.false_button);
 
-        choice = false;
         trueButton.setEnabled(false);
         falseButton.setEnabled(false);
 
         result.setText(isCorrect(choice));
         answer.setVisibility(View.VISIBLE);
         result.setVisibility(View.VISIBLE);
-
     }
+
 
     public void nextQuestion(View view) {
 
@@ -93,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (choice == realAnswer) {
-            truth = "You were correct! The answer was: " + realAnswer + "\n\n" +theTruth;
+            truth = "You were correct! The answer was: " + realAnswer + "\n\n" + theTruth;
         } else {
-            truth = "You were wrong! The answer was: " + realAnswer + "\n\n" +theTruth;
+            truth = "You were wrong! The answer was: " + realAnswer + "\n\n" + theTruth;
         }
 
         return truth;
