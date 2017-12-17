@@ -99,21 +99,24 @@ public class MainActivity extends AppCompatActivity {
 
         switch (questionNumber) {
             case 0:
-                theQuestion = "Twinkies last forever.";
+                theQuestion = getString(R.string.Twinkie_statement);
                 realAnswer = false;
-                theTruth = "Twinkies have a shelf life of approximately 45 days —far shorter than the common myth that Twinkies are edible for decades or longer.They generally remain on a store shelf for only 7 to 10 days";
+                theTruth = getString(R.string.Twinkie_fact);
                 break;
             case 1:
-                theQuestion = "January";
+                theQuestion = getString(R.string.missing_person_statement);;
                 realAnswer = false;
+                theTruth = getString(R.string.missing_person_fact);
                 break;
             case 2:
-                theQuestion = "February";
+                theQuestion = getString(R.string.chicken_statement);
                 realAnswer = true;
+                theTruth = getString(R.string.chicken_fact);
                 break;
             case 3:
-                theQuestion = "March";
+                theQuestion = getString(R.string.washington_statement);
                 realAnswer = false;
+                theTruth = getString(R.string.washington_fact);
                 break;
             case 4:
                 theQuestion = "April";

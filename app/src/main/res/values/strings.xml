@@ -1,13 +1,31 @@
 <resources>
     <string name="app_name">QuizConceptions</string>
 
-    <string name="statement_header">Statement</string>
     <string name="instructions">Instructions</string>
-
-
 
     <string name="instruction_text"> Review the following statement. Decide whether you believe it\'s true or false then select the corresponding button. \n\nSelect next to skip to the next statement.</string>
 
+
+    <string name="statement_header">Statement</string>
+
+
+    <string name="Twinkie_statement">Twinkies last forever.</string>
+
+    <string name="Twinkie_fact">Twinkies have a shelf life of approximately 45 days —far shorter than the common myth that Twinkies are edible for decades or longer.They generally remain on a store shelf for only 7 to 10 days</string>
+
+
+    <string name="missing_person_statement">It is necessary to wait 24 hours before filing a missing person report. </string>
+
+    <string name="missing_person_fact"> In instances where there is evidence of violence or of an unusual absence, law enforcement agencies in the United States often stress the importance of beginning an investigation promptly.[15] The UK government website says explicitly in large type, "You don't have to wait 24 hours before contacting the police".</string>
+
+
+    <string name="washington_statement">George Washington did not have wooden teeth.</string>
+
+    <string name="washington_fact">His dentures were made of gold, hippopotamus ivory, lead, animal teeth (including horse and donkey teeth),[133] and probably human teeth purchased from slaves</string>
+
+    <string name="chicken_statement">There was a chicken that lived for 18 months with its head cut off.</string>
+    
+    <string name="chicken_fact">After a farmer failed to properly behead a chicken because he missed the jugular vein, the bird lived for 18 months. Christened Mike the Headless Chicken, it survived on a mixture of milk and water, fed into his exposed esophagus via an eyedropper. The farmer turned Mike into a sideshow attraction, charging 25 cents admission. </string>
 
 
 </resources>
